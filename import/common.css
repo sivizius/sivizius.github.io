@@ -19,6 +19,7 @@ a:hover, a:active
   color: #00f;
   text-decoration: underline;
 }
+
 nav
 {
   float: none;
@@ -26,7 +27,7 @@ nav
   padding: 16px;
   position: fixed;
 }
-#navigation, #repositories
+#nav, #rep
 {
   color: #f80;  
 }
@@ -120,7 +121,6 @@ div:target
     display: none;
     position: absolute;
     background-color: #000;
-    color: #080;
   }
   .dropmenu:hover .dropdown {
     display: block;
@@ -133,10 +133,14 @@ div:target
     background-color: #111;
     border: 1px solid #222;
   }
+  #nav, #rep
+  {
+    color: #f80;
+  }
 }
 @media print, screen and (min-width: 961px)
 {
-  #navigation:after, #repositories:after
+  .nav:after
   {
     content: '\a';
     white-space: pre;
