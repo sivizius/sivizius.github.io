@@ -85,7 +85,7 @@ div:target
 .button:hover {
   background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
 }
-@media print, screen /* and (max-width: 960px) */
+@media print, screen and (max-width: 960px)
 {
   #logo
   {
@@ -138,7 +138,6 @@ div:target
     left: 145px;
   }
 }
-/*
 @media print, screen and (min-width: 961px)
 {
   #navigation:after, #repositories:after
@@ -147,4 +146,3 @@ div:target
     white-space: pre;
   }
 }
-*/
