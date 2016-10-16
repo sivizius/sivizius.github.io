@@ -26,16 +26,16 @@ a:hover, a:active
 }
 nav
 {
-  float: left;
+  border: 1px solid #00f;
+  float: none;
   width: 160px;
-  height: 100%;
   padding: 16px;
   position: fixed;
 }
 
 article
 {
-  margin-left: 192px;
+  border: 1px solid #00f;
   overflow: hidden;
   padding: 16px;
 }
@@ -82,11 +82,15 @@ div:target
 .button:hover {
   background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
 }
-@media print, screen and (max-width: 900px)
+@media print, screen and (max-width: 480px)
 {
   nav
   {
-    float: top;
+    float: none;
     width: 100%;
+  }
+  div
+  {
+    left: 0px;
   }
 }
