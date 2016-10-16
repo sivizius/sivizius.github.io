@@ -1,0 +1,84 @@
+body
+{
+  font-family: 'DejaVu Sans Mono', 'Monaco', 'Bitstream Vera Sans Mono', 'Lucida Console', 'Terminal', 'monospace';
+  font: 16px;
+  color: #080;
+  background-color: #000;
+}
+h1, h2
+{
+  color: #f80;
+}
+h4
+{
+  margin-bottom: 5px;
+  color: #f80;
+}
+a:link, a:visited
+{
+  color: #008;
+  text-decoration: none;
+}
+a:hover, a:active
+{
+  color: #00f;
+  text-decoration: underline;
+}
+nav
+{
+  float: left;
+  width: 160px;
+  height: 100%;
+  padding: 16px;
+  position: fixed;
+}
+
+article
+{
+  margin-left: 192px;
+  overflow: hidden;
+  padding: 16px;
+}
+
+#logo
+{
+  width: 128px;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+div
+{
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 208px;
+  right: 0px;
+  bottom: 0px;
+  padding: 16px;
+  background: #000;
+  z-index: 0;
+}
+div:target
+{
+  overflow: auto;
+  z-index: 1;
+}
+.button {
+  display: inline-block;
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-top: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.button:hover {
+  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
+}
