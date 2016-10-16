@@ -41,8 +41,6 @@ article
 #logo
 {
   width: 128px;
-  padding-left: 16px;
-  padding-top: 16px;
 }
 div
 {
@@ -50,7 +48,7 @@ div
   overflow: hidden;
   position: absolute;
   top: 0px;
-  left: 208px;
+  left: 192px;
   right: 0px;
   bottom: 0px;
   padding: 16px;
@@ -66,6 +64,10 @@ div:target
 #home
 {
   display: block;
+}
+#home:before
+{
+  content: '';
 }
 .button {
   display: inline-block;
@@ -140,7 +142,7 @@ div:target
 }
 @media print, screen and (min-width: 961px)
 {
-  .nav:after
+  #nav:after, #rep:after
   {
     content: '\a';
     white-space: pre;
