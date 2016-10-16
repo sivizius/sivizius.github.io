@@ -10,17 +10,24 @@
   <body>
     <nav>
       <img id='logo' src='pics/logo.png' />
-      <h4>navigation</h4>
-      <a href='#home' >&#x279C; home    </a> <br />
-      <a href='#about'>&#x279C; about me</a> <br />
-      <a href="https://github.com/sivizius">&#x279C; GitHub</a> <br />
-      <h4>repositories</h4>
-      <a href='#yasic'>&#x279C; yasic</a><br />
+      <a id='navigation'>navigation</a>
+      <span id='navs'>
+        <a href='#home' >&#x279C; home    </a><br />
+        <a href='#about'>&#x279C; about me</a><br />
+        <a href="https://github.com/sivizius">&#x279C; GitHub</a><br />
+      </span>
+      <a id='repositories'>repositories</a>
+      <span id='reps'>
+        <a href='#yasic'>&#x279C; yasic</a><br />
+      </span>
     </nav>
     <article>
       <div id='about'>
         <h1>Who am I?</h1>
         <p>Hi, I am sivizius, a dude from saxony doing unusual stuff.</p>
+      </div>
+      <div id='home'>
+        <h1>Website of sivizius</h1>
       </div>
       <div id='yasic'>
         <h1>yet another symbolic instruction code</h1>
@@ -125,9 +132,6 @@
         This would match <em>A</em>, <em>Z</em>, but never <em>0</em>:</p>
         <pre><code>'[AZ|09]' {}
         </code></pre>
-      </div>
-      <div id='home'>
-        <h1>Website of sivizius</h1>
       </div>
     </article>
  </body>
