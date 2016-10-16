@@ -89,8 +89,8 @@ div:target
 {
   #logo
   {
-    padding-left: 0px;
-    padding-top: 0px;
+    vertical-align: text-top;
+    padding: 2px;
     width: 24px;
   }
   div
@@ -103,39 +103,35 @@ div:target
     height: 28px;
     width: 98%;
     positon: fixed;
-    padding: 2px;
+    padding: 0px;
     top: 0px;
     z-index: 2;
     background-color: #000;
     border-bottom: 1px solid #444;
   }
-  #navs, #reps
+  .dropmenu
+  {
+    vertical-align: text-top;
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown
   {
     display: none;
+    position: absolute;
+    background-color: #000;
+    color: #080;
   }
-  #navigation, #repositories
-  {
-    display: inline;
-  }
-  #repositories:hover, #navigation:hover
-  {
-    background-color: #111;
-    border: 1px solid #222;
-  }
-  #repositories:hover + span, #reps:hover, #navigation:hover + span, #navs:hover
-  {
-    position: fixed;
+  .dropmenu:hover .dropdown {
     display: block;
+    position: relative;
     background-color: #000;
     width: 100px;
   }
-  #navigation:hover + span, #navs:hover
+  .dropmenu:hover
   {
-    left: 42px;
-  }
-  #repositories:hover + span, #reps:hover
-  {
-    left: 145px;
+    background-color: #111;
+    border: 1px solid #222;
   }
 }
 @media print, screen and (min-width: 961px)
