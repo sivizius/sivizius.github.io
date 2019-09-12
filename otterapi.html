@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Otters</title>
+    <script>
+      let request             =   new XMLHttpRequest();
+      request.open
+      (
+        "GET",
+        "/otters.json",
+      );
+      request.responseType    =   "json";
+      request.onload          =   function  ( )
+      {
+        if  ( request.status  === 200 )
+        {
+          let otters          =   request.response.pngs.concat  ( request.response.jpgs );
+          let number          =   Math.floor  ( Math.random ( ) * otters.length );
+          let image           =   document.createElement  ( "img"   );
+          let imageParent     =   document.getElementById ( "body"  );
+          image.alt           =   "Cute Otter Picture";
+          image.src           =   otters  [ number  ];
+          imageParent.appendChild ( image );
+        }
+      };
+      request.send  ( );
+    </script> 
+  </head>
+  <body>
+  </body>
+</html>
