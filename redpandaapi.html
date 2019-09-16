@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cute Otters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <style>
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #EFEFEF;
+    background-color: #222222;
+    background-image: none;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.picture-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 100vw;
+	max-height: 100vh;
+}
+
+.picture-background {
+	height: 100vh;
+	width: 100vw;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	filter: blur(20px);
+}
+
+img {
+	max-height: 100%;
+	max-width: 100%;
+	box-shadow: 0 0 20px black;
+}
+
+    </style>
+	</head>
+	<body>
+
+		<div class="picture-background" id="background"></div>
+		<div class="picture-container">
+			<img id="picture">
+		</div>
+
+		<script>
+fetch("https://some-random-api.ml/img/red_panda")
+	.then(resp => resp.json())
+	.then(redpandajson => {
+    document.getElementById("picture").src = redpandajson.link
+		document.getElementById("background").style["background-image"] = "url(" + pic + ")";
+	})
+		</script>
+	</body>
+</html>
