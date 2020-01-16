@@ -57,7 +57,7 @@ img {
 fetch("https://some-random-api.ml/img/red_panda")
 	.then(resp => resp.json())
 	.then(redpandajson => {
-    document.getElementById("picture").src = redpandajson.link
+    document.getElementById("picture").src = redpandajson.link;
 		document.getElementById("background").style["background-image"] = "url(" + pic + ")";
 	})
 		</script>

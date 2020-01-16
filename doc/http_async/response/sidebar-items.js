@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["Response","Constructor for a dummy `Response`."]],"struct":[["Response","Hyper Text Transfer Protocol Response."]]});

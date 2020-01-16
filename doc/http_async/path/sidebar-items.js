@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["Path","Path and Query to a Resource."]]});
